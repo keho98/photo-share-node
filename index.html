@@ -36,13 +36,17 @@
 				  });
 
 				  $(function(){
+					var id = Math.floor(Math.random()*10000);
 				  	$canvas = $('#main');
 						$canvas.on('mousemove', function(e){
 								c_x = (e.pageX-$(this).offset().left);
 					    	c_y = (e.pageY-$(this).offset().top);
 					    	socket.emit('report point', {
-					    		x: c_x,
-					    		y: c_y
+					    		key: id,
+							points:{
+								x: c_x,
+					    			y: c_y
+							}
 					    	});
 					  	});
 				  });
