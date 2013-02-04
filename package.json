@@ -1,0 +1,25 @@
+{
+  "name": "Photo share rails",
+  "version": "0.0.1",
+  "description": "instagram visualizer for ideo",
+  "main": "app.js",
+  "dependencies": {
+    "backbone": "0.9.2",
+    "express": "3.0.0rc4",
+    "request": "2.11.1",
+    "routes": "0.1.1",
+    "socket.io":"0.9.6",
+  },
+
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines":{
+  	"node" : "0.8.8",
+  	"npm" : "1.1.49"
+  },
+  "repository": "",
+  "author": "",
+  "license": ""
+}
